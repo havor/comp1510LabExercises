@@ -5,7 +5,7 @@ package lab01;
 //Description: prints the names and grads of students.
 //********************************************************
 
-public class Grades {
+public class StudentGradesTable {
     Student[] students = new Student[]{
             new Student("Joe", 43, 7),
             new Student("William", 50, 8),
@@ -20,7 +20,7 @@ public class Grades {
          //System.out.println(" Name\t Lab\t Bonus\t Total");
          System.out.format("%8s%8s%8s%8s ","Name","Lab","Bonus","Total");
          System.out.println();
-         Grades grades = new Grades();
+         StudentGradesTable table = new StudentGradesTable();
          /*
          grades.students = new Student[]{
                          new Student("Joe", 43, 7),
@@ -28,8 +28,8 @@ public class Grades {
                          new Student("Mary Sue", 39, 49)
                  };
                  */
-         for(int i = 0; i < grades.students.length; i++){
-             Student student = grades.students[i];
+         for(int i = 0; i < table.students.length; i++){
+             Student student = table.students[i];
              /*
              System.out.print(student.Name + "\t" 
                                  + student.LabPoints + "\t" 
