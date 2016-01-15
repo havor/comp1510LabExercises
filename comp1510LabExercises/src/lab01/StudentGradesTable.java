@@ -13,12 +13,12 @@ public class StudentGradesTable {
     };;
     
     public static void main(String[] args){
-         System.out.println("///////////////////\\\\\\\\\\\\\\\\\\\\");
-         System.out.println("==     Student Points    ==");
-         System.out.println("\\\\\\\\\\\\\\\\\\\\///////////////////");
+         System.out.println("///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+         System.out.println("==          Student Points          ==");
+         System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////");
          System.out.println();
          //System.out.println(" Name\t Lab\t Bonus\t Total");
-         System.out.format("%8s%8s%8s%8s ","Name","Lab","Bonus","Total");
+         System.out.format("%10s%8s%8s%10s ","Name","Lab","Bonus","Total");
          System.out.println();
          StudentGradesTable table = new StudentGradesTable();
          /*
@@ -37,7 +37,7 @@ public class StudentGradesTable {
                                  + (student.LabPoints + student.BonusPoints)
                                  + "\n");
               */
-             System.out.format("%8s%8d%8d%8d ",student.Name, student.LabPoints, 
+             System.out.format("%10s%8d%8d%10d ",student.Name, student.LabPoints, 
                                  student.BonusPoints, student.LabPoints + student.BonusPoints);
              System.out.println();
          }
