@@ -1,4 +1,4 @@
-package lab01;
+package lab02;
 //********************************************************
 //File Name: Grades.java
 //Author: Hai Hua Tan
