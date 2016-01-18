@@ -15,22 +15,24 @@ public class IdealWeightCalculator {
     static final int FEMALE_ADJUSTMENT = 5;
     static final int MALE_ADJUSTMENT = 6;
     public static void main(String[] args){
-        
+        //Declare two variables to keep feet and inches of height
         int feet = 0;
         int inches = 0;
-        int IdealWeight = 0;
+        
+        //Prompt user to input feet and inches
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input your height (feet):");
         feet = scanner.nextInt();
         System.out.println("Please input your height (inches):");
         inches = scanner.nextInt();
         
-        System.out.println("You are " + feet + " feet " + inches + " inches tall." );
-        
+        //Calculate the ideal weight for female and male respectively       
         int heightInInches = feet * 12 + inches;
         float idealFemaleWeight = (heightInInches - BASIC_HEIGHT) * FEMALE_ADJUSTMENT + FEMALE_BASIC_WEIGHT;
         float idealMaleWeight = (heightInInches - BASIC_HEIGHT) * MALE_ADJUSTMENT + MALE_BASIC_WEIGHT;
         
+        //print the result
+        System.out.println("You are " + feet + " feet " + inches + " inches tall." );
         System.out.println("If you are a lady, your ideal weight is: " 
                             + idealFemaleWeight*(1-RANGE) 
                             + " to " 
