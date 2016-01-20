@@ -21,8 +21,11 @@ public class BaseConvert {
         System.out.println();
         System.out.println ("Base Conversion Program");
         System.out.println() ;
+        do {
         System.out.print ("Please enter a base (2-9): ");
         base = scanner.nextInt();
+        } while(base > 9 || base < 2);
+        
         
         //calculate the maxNumber
         for(int i = 1; i<=4; i++){

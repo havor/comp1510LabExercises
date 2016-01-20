@@ -6,9 +6,9 @@
 package lab02;
 
 public class Circle {
+    static final double PI = 3.14159;
     public static void main(String[] args){
-        final double PI = 3.14159;
-        
+                
         //declare and initialize radius, area and circumference
         int radius = 10;
         double area = PI * radius * radius; 
