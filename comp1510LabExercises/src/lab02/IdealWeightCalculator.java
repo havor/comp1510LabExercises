@@ -33,11 +33,11 @@ public class IdealWeightCalculator {
         
         //print the result
         System.out.println("You are " + feet + " feet " + inches + " inches tall." );
-        System.out.println("If you are a lady, your ideal weight is: " 
+        System.out.println("If you are a lady, your ideal weight range is from " 
                             + idealFemaleWeight*(1-RANGE) 
                             + " to " 
                             + idealFemaleWeight*(1+RANGE));
-        System.out.println("If you are a man, your ideal weight is: " + 
+        System.out.println("If you are a man, your ideal weight range is from " + 
                             idealMaleWeight * (1-RANGE)
                             + " to "
                             + idealMaleWeight * (1+RANGE));

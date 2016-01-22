@@ -22,7 +22,7 @@ public class BaseConvert {
         System.out.println ("Base Conversion Program");
         System.out.println() ;
         do {
-        System.out.print ("Please enter a base (2-9): ");
+        System.out.println ("Please enter a base (2-9): ");
         base = scanner.nextInt();
         } while(base > 9 || base < 2);
         
@@ -35,7 +35,7 @@ public class BaseConvert {
         
         //Input a base 10 number
         do{
-            System.out.print("please input a 10 base number:");
+            System.out.println("please input a 10 base number:");
             base10Number = scanner.nextInt();
             if(base10Number > maxNumber) System.out.println("The number is out of range.");
         }while(base10Number > maxNumber);
