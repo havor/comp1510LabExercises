@@ -25,14 +25,16 @@ public class PieChart extends JApplet {
      */
     @Override
     public void paint(Graphics page) {
+        final int width = 400;
+        final int height = 400;
+        this.setSize(width, height);
+        
         final float rentAndUtilities = 0.35f;
         final float transportation = 0.15f;
         final float food = 0.15f;
         final float educational = 0.25f;
         final float miscellaneous = 0.1f;
-        final int width = 400;
-        final int height = 400;
-        this.setSize(width, height);
+
 
         
         int beginAngle = 90;

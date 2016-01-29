@@ -18,7 +18,8 @@ public class StringManips {
         String firstHalf;    //first half of the phrase string
         String secondHalf;   //second half of the phrase string
         String switchedPhrase;  //a new phrase with original halves switched
-        String middle3;         //a string contain the middle 3 characters in the phrase string
+        String middle3;         //a string contain the middle 3 characters
+                                //in the phrase string
         
         String city;
         String province;
@@ -35,7 +36,7 @@ public class StringManips {
         switchedPhrase = secondHalf.concat(firstHalf);
         
         //get a substring of middle 3 characters in the phrase string
-        middle3 = phrase.substring(middleIndex-1, middleIndex + 2);
+        middle3 = phrase.substring(middleIndex - 1, middleIndex + 2);
         
         //print information about the phrase
         System.out.println();
@@ -51,12 +52,15 @@ public class StringManips {
         System.out.println("Middle 3 charcters are: " + middle3);
         System.out.println();
         
-        Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Please enter your city: ");
         city = scan.nextLine();
         
         System.out.print("Please enter your province: ");
         province = scan.nextLine();
-        System.out.println(province.toUpperCase() + city.toLowerCase() + province.toUpperCase());
+        System.out.println(province.toUpperCase() 
+                           + city.toLowerCase() 
+                           + province.toUpperCase());
+        scan.close();
     }
 }
