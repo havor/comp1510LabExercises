@@ -36,11 +36,11 @@ public class IdealWeightCalculator {
         System.out.println("If you are a lady, your ideal weight range is from " 
                             + idealFemaleWeight*(1-RANGE) 
                             + " to " 
-                            + idealFemaleWeight*(1+RANGE));
+                            + idealFemaleWeight*(1+RANGE) + " pounds");
         System.out.println("If you are a man, your ideal weight range is from " + 
                             idealMaleWeight * (1-RANGE)
                             + " to "
-                            + idealMaleWeight * (1+RANGE));
+                            + idealMaleWeight * (1+RANGE) + " pounds");
     }
 
 }
