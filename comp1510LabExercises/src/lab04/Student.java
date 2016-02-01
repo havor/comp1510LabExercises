@@ -13,10 +13,10 @@ public class Student {
     private String name;
     
     /**test#1 score.*/
-    private int test1Score;
+    private float test1Score;
     
     /**test#2 score.*/
-    private int test2Score;
+    private float test2Score;
     
     /**Constructor of Student. 
      * @param name used to create a student record. */
@@ -44,37 +44,37 @@ public class Student {
     
     /**Getter of test1Score.
      * @return score of test#1. */
-    public int getTest1Score() {
+    public float getTest1Score() {
         return test1Score;
     }
     
     /**Getter of test2Score.
      * @return score of test#2. */
-    public int getTest2Score() {
+    public float getTest2Score() {
         return test2Score;
     }
     
     /**Setter of test1Score.
      * @param score value will be set to test1Score*/
-    private void setTest1Score(int score) {
+    private void setTest1Score(float score) {
         test1Score = score;
     }
     
     /**Setter of test2Score.
      * @param score value will be set to test1Score*/
-    private void setTest2Score(int score) {
+    private void setTest2Score(float score) {
         test2Score = score;
     }
     
     /**Method to input student's grades.*/
     public void inputGrades() {
         Scanner scan = new Scanner(System.in);
-        int score;
+        float score;
         System.out.println("=========Record of " + getName() + "=============");
         System.out.print("Please enter "
                 + getName() 
                 + "'s score in test #1: ");
-        score = scan.nextInt();
+        score = scan.nextFloat();
         setTest1Score(score);
         
        
@@ -82,15 +82,15 @@ public class Student {
         System.out.print("Please enter "
                 + getName() 
                 + "'s score in test #2: ");
-        score = scan.nextInt();
+        score = scan.nextFloat();
         setTest2Score(score);
         System.out.println();
         //scan.close();
     }
     
     /**Method to calculate the average of test #1 and test #2. 
-     * @return int value of average score*/
-    public int getAverage() {
+     * @return float value of average score*/
+    public float getAverage() {
         return (getTest1Score() + getTest2Score()) / 2;
     }
     
