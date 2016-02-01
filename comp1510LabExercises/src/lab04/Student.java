@@ -18,6 +18,8 @@ public class Student {
     /**test#2 score.*/
     private float test2Score;
     
+    
+    
     /**Constructor of Student. 
      * @param name used to create a student record. */
     public Student(String name) {
@@ -66,9 +68,12 @@ public class Student {
         test2Score = score;
     }
     
-    /**Method to input student's grades.*/
-    public void inputGrades() {
-        Scanner scan = new Scanner(System.in);
+    /**Method to input student's grades.
+     *@param scan input stream object retrieved from main method 
+     */
+    
+    public void inputGrades(Scanner scan) {
+        //Scanner scan = new Scanner(System.in);
         float score;
         System.out.println("=========Record of " + getName() + "=============");
         System.out.print("Please enter "
@@ -88,14 +93,20 @@ public class Student {
         //scan.close();
     }
     
-    /**Method to calculate the average of test #1 and test #2. 
+    /**
+     * Method to calculate the average of test #1 and test #2. 
      * @return float value of average score*/
     public float getAverage() {
         return (getTest1Score() + getTest2Score()) / 2;
     }
     
+    /**
+     * Override toString method to generate output info.
+     * @param null
+     * @return String info to output
+     * */
     
-    public String toString(){
+    public String toString() {
         String info = "Name:\t" 
                 + getName()
                 + "\tTest2:\t"
