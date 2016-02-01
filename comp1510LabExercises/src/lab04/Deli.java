@@ -15,7 +15,7 @@ public class Deli {
      * @param args is unused.
      */
     public static void main(String[] args) {
-        final double OUNCES_PER_POUND = 16.0;
+        final double ouncePerPound = 16.0;
         double pricePerPound; // price per pound
         double weightOunces; // weight in ounces
         double weight; // weight in pounds
@@ -37,7 +37,7 @@ public class Deli {
         System.out.print("Enter the weight (ounces): ");
         weightOunces = scan.nextDouble();
         // Convert ounces to pounds and compute the total price
-        weight = weightOunces / OUNCES_PER_POUND;
+        weight = weightOunces / ouncePerPound;
         totalPrice = pricePerPound * weight;
         
         System.out.println();
@@ -55,5 +55,6 @@ public class Deli {
                             + " pounds");
         System.out.println();
         System.out.println("TOTAL: " + money.format(totalPrice));
+        scan.close();
     }
 }

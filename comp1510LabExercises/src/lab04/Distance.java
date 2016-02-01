@@ -33,7 +33,7 @@ public class Distance {
         
         distance = Math.sqrt(Math.pow((x2 - x1), 2.0) 
                             + Math.pow((y2 - y1), 2.0));
-        System.out.println("The distance of (" 
+        System.out.println("The distance between (" 
                             + x1
                             + ", "
                             + y1
