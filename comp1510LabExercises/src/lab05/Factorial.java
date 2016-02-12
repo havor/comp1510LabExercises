@@ -13,18 +13,25 @@ public class Factorial {
      * @param args the command line parameters, unused.
      */
     public static void main(String[] args) {
-        int n;
-        int result;
+        long n;
+        long result;
         
         Scanner scan = new Scanner(System.in);
-       do{
+       do {
         System.out.println("Please enter an positive integer: ");
         n = scan.nextInt();   
        } while(n < 0);
 
         result = factorial(n);
         
-        System.out.println(n + "! = " + result + ".");
+        if (result < 0) {
+            System.out.println("n is too large!");
+            } else {
+            System.out.println(n + "! = " + result + ".");        
+            }
+        
+        
+        scan.close();
         
     }
     
@@ -33,8 +40,8 @@ public class Factorial {
      * @param n the integer needed to calculate.
      * @return factorial of n.
      */
-    private static int factorial(int n) {
-        if (n <= 0) {
+    private static long factorial(long n) {
+        if (n == 0 || n == 1) {
             return 1;
             } else {
             return n * factorial(n - 1);
