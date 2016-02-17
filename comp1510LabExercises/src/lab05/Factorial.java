@@ -27,7 +27,7 @@ public class Factorial {
         if (result < 0) {
             System.out.println("n is too large!");
             } else {
-            System.out.println(n + "! = " + result + ".");        
+            System.out.println(n + "! = " + result);        
             }
         
         
