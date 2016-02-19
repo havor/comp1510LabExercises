@@ -61,6 +61,7 @@ public class Salary {
         System.out.println("Your new Salary:        "
                             + newSalary);
         }
+        scan.close();
     }
 
 }
