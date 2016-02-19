@@ -105,10 +105,10 @@ public class VoteCounterPanel extends JPanel {
          if (votesForJoe > total / 2 || votesForSam > total / 2) {
              result = "<html><body style=\"color: orange\">" 
                      + "======Vote Ended=======<br>"
-                     + "Total£º " 
+                     + "Total: " 
                      + total
                      + " people<br>"
-                     + "Voted£º" 
+                     + "Voted: " 
                      + (votesForJoe + votesForSam) 
                      + " people <br>"
                      + "Final: "
@@ -117,21 +117,22 @@ public class VoteCounterPanel extends JPanel {
              joe.setEnabled(false);
              sam.setEnabled(false);
          } else {
-             String win = ((votesForJoe > votesForSam ? "Joe " : "Sam ") 
+             String currentResult = ((votesForJoe > votesForSam 
+                     ? "Joe " : "Sam ") 
                      + "is leading...");
              if (votesForJoe == votesForSam) {
-                 win = "Tie"; 
+                 currentResult = "Tie"; 
                  } 
              result = "<html><body style=\"color: blue\">" 
                      + "======Voting=======<br>"
-                     + "Total£º " 
+                     + "Total: " 
                      + total
                      + " people<br>"
-                     + "Voted£º" 
+                     + "Voted:" 
                      + (votesForJoe + votesForSam) 
                      + " people <br>"
                      + "Current: "
-                     + win
+                     + currentResult
                      + "</body></html>";
              if (total == votesForJoe + votesForSam) {
                  joe.setEnabled(false);

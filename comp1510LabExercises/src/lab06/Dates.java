@@ -125,14 +125,14 @@ public class Dates {
                                 + month 
                                 + "/"
                                 + day
-                                + " is a valid date.");
+                                + " is a valid date in the 2nd millenium.");
         } else {
             System.out.println(year 
                     + "/" 
                     + month 
                     + "/"
                     + day
-                    + " is not a valid date.");
+                    + " is not a valid date in the 2nd millenium.");
         }
         scan.close();
     }

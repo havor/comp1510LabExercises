@@ -13,7 +13,7 @@ public class TestNames {
      *Main entry of the program.
      *@param args are command line running arguments, unused.  
      */
-    public static void main(String[] args) {
+public static void main(String[] args) {
         String firstName;
         String middleName;
         String lastName;
@@ -82,5 +82,4 @@ public class TestNames {
         }
         scan.close();
     }
-
 }
