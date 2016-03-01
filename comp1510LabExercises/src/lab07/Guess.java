@@ -21,13 +21,13 @@ public class Guess {
         System.out.println("I have a number. Can you guess it is? (1-10)");
         guess = scan.nextInt();
         // read in guess
-        while (guess != numToGuess) // keep going as long as the guess is wrong
-        {
+         // keep going as long as the guess is wrong
+        do {
             // print message saying guess is wrong
             System.out.println("Opps...your guess is not my number, try again...(1-10)");
             // get another guess from the user
             guess = scan.nextInt();
-        }
+        } while (guess != numToGuess);
         // print message saying guess is right
         System.out.println("Congradulations! you got it. It's " + numToGuess + " .");
     }
