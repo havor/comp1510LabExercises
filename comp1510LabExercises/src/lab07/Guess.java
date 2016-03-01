@@ -16,17 +16,18 @@ public class Guess {
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
         // randomly generate the number to guess
-        numToGuess = generator.nextInt(10) + 1;
+        numToGuess = generator.nextInt(10) + 1;   
         // print message asking user to enter a guess
-        System.out.println("I have a number. Can you guess it is? (1-10)");
-        guess = scan.nextInt();
+        System.out.println("I have a number. Can you guess what it is? (1-10)");
+
         // read in guess
          // keep going as long as the guess is wrong
         do {
-            // print message saying guess is wrong
-            System.out.println("Opps...your guess is not my number, try again...(1-10)");
-            // get another guess from the user
             guess = scan.nextInt();
+            // print message saying guess is wrong
+            if (guess != numToGuess) {
+                System.out.println("Opps...your guess is not my number, try again...(1-10)");
+                }
         } while (guess != numToGuess);
         // print message saying guess is right
         System.out.println("Congradulations! you got it. It's " + numToGuess + " .");
