@@ -65,7 +65,7 @@ public class Count {
                 }
             }
             
-            if (!phrase.equals("quit")) {
+            if (!phrase.equalsIgnoreCase("quit")) {
                 System.out.println();
                 System.out.println("Number of blank spaces: " + countBlank);
                 System.out.println("Number of A or a: " + countA);
@@ -78,7 +78,7 @@ public class Count {
                 System.out.println();
                 System.out.println("Thank you for using, Bye!");
             }
-        } while (!phrase.equals("quit"));
+        } while (!phrase.equalsIgnoreCase("quit"));
         scan.close();
     }
 }
