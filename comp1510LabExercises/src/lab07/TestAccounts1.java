@@ -27,6 +27,7 @@ public class TestAccounts1 {
         String name1;
         String name2;
         String name3;
+        String sameAcctNum;
         Account account1;
         Account account2;
         Account account3;
@@ -40,9 +41,17 @@ public class TestAccounts1 {
             name3 = test.inputName(scan, "name3");
             if (name3.equalsIgnoreCase("q")) break;
             
+            System.out.println("Account 2 and 3 with same acccount number? (y/n)");
+            sameAcctNum = scan.next();
             account1 = new Account(100, name1);
-            account2 = new Account(100, name2);
-            account3 = new Account(100, name3);
+            
+            if(sameAcctNum.equalsIgnoreCase("y")) {
+                account2 = new Account(100, name2, 10000000L);
+                account3 = new Account(100, name3, 10000000L);
+            } else {
+                account2 = new Account(100, name2);
+                account3 = new Account(100, name3);
+            }
             
             System.out.println("Three account created:");
             System.out.println(account1);
