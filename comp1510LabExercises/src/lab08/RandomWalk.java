@@ -140,7 +140,11 @@ public class RandomWalk {
     public void walk() {
         while (moreSteps() && inBounds()) {
             takeStep();
-            //System.out.println(toString());
+            System.out.println(toString());
+            if (!inBounds())
+                System.out.println("End: Out of boundary!");
+            if(!moreSteps()) 
+                System.out.println("End: Maximum steps reached.");
         }
     }
     

@@ -30,11 +30,20 @@ public class TestWalk {
         System.out.println("========initial==================");
         System.out.println("rw1: " + rw1);
         System.out.println("rw2: " + rw2);
-        System.out.println("========Walk 5 steps=============");
+        System.out.println();
+        
+        System.out.println("========rw1 walks by itself=========================");
+        rw1.walk();
+        
+        System.out.println();
+        System.out.println("========rw2 Walk 5 steps, find maximun distance of the walk=============");
+        System.out.println("rw2: " + rw2 + ", max distance:" + rw2.getMaxDistance()); 
         for (int i = 0; i < 5; i++) {
-            rw1.takeStep();
-            rw2.takeStep();
-            System.out.println("rw1: " + rw1 + ", max distance:" + rw1.getMaxDistance());
+            if(rw2.inBounds() && rw2.moreSteps()) {
+                rw2.takeStep();
+            }
+            
+            //System.out.println("rw1: " + rw1 + ", max distance:" + rw1.getMaxDistance());
             System.out.println("rw2: " + rw2 + ", max distance:" + rw2.getMaxDistance());   
         }    
         
