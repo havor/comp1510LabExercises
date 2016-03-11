@@ -67,7 +67,7 @@ public class RandomWalk {
         
         return ("currentSteps: " 
                 + currentSteps 
-                + "; position: ("
+                + ", position: ("
                 + x 
                 + ", "
                 + y

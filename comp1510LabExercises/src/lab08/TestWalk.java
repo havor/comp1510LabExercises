@@ -34,8 +34,8 @@ public class TestWalk {
         for (int i = 0; i < 5; i++) {
             rw1.takeStep();
             rw2.takeStep();
-            System.out.println("rw1: " + rw1 + "max distance:" + rw1.getMaxDistance());
-            System.out.println("rw2: " + rw2 + "max distance:" + rw2.getMaxDistance());   
+            System.out.println("rw1: " + rw1 + ", max distance:" + rw1.getMaxDistance());
+            System.out.println("rw2: " + rw2 + ", max distance:" + rw2.getMaxDistance());   
         }    
         
         

@@ -27,7 +27,7 @@ public class Collisions {
         
         System.out.println("The two particals collided " 
                             + collisionCounts 
-                            + " times in last "
+                            + " times in the last "
                             + maxSteps
                             +" runs.");
         
