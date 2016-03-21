@@ -24,12 +24,18 @@ public class Collisions {
                }
            }
         }
-        
-        System.out.println("The two particals collided " 
+        if(collisionCounts == 0) {
+         System.out.println("The tow particals did not collide in the last " + maxSteps + " runs.");   
+        } else {
+         System.out.println("The two particals collided " 
                             + collisionCounts 
-                            + " times in the last "
+                            + ((collisionCounts == 1)?" time":" times")
+                            + " in the last "
                             + maxSteps
-                            +" runs.");
+                            +" runs.");           
+        }
+        
+
         
     }
     

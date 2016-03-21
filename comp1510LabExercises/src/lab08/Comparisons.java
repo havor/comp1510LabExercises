@@ -1,7 +1,15 @@
 package lab08;
 import java.util.Scanner;
-
+/**
+ * A class test compare 3 input string or integers.
+ * @author Hai Hua, Tan
+ * @version 1.0
+ */
 public class Comparisons {
+    /**
+     * main method of the program, called by JVM.
+     * @param args command line parameters, unused in this program
+     */
     public static void main(String[] args) {
         
         String valString1;
@@ -25,11 +33,12 @@ public class Comparisons {
         valString3 = scan.next();
                 
         System.out.println("The largest string among \"" 
-                            + valString1 +"\", \"" 
-                            + valString2 +"\" and \"" 
+                            + valString1 + "\", \"" 
+                            + valString2 + "\" and \"" 
                             + valString3 
                             + "\" is: " 
-                            + Compare3.largest(valString1, valString2, valString3));
+                            + Compare3.
+                            largest(valString1, valString2, valString3));
         
         System.out.println();
         
@@ -49,7 +58,8 @@ public class Comparisons {
                            + " and "
                            + valInt3
                            + " is: "
-                           + Compare3.largest(valInt1, valInt2, valInt3));        
+                           + Compare3.
+                           largest(valInt1, valInt2, valInt3));        
         scan.close();
     }    
 }

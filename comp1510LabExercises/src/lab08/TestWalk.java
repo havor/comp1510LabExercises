@@ -39,10 +39,15 @@ public class TestWalk {
         System.out.println("========rw2 Walk 5 steps, find maximun distance of the walk=============");
         System.out.println("rw2: " + rw2 + ", max distance:" + rw2.getMaxDistance()); 
         for (int i = 0; i < 5; i++) {
-            if(rw2.inBounds() && rw2.moreSteps()) {
-                rw2.takeStep();
+            if(!rw2.inBounds()) {
+                System.out.println("Walk out of range!");
+                break;
             }
-            
+            if(!rw2.moreSteps()) {
+                System.out.println("Maximun steps reached!");
+                break;
+            }
+            rw2.takeStep();
             //System.out.println("rw1: " + rw1 + ", max distance:" + rw1.getMaxDistance());
             System.out.println("rw2: " + rw2 + ", max distance:" + rw2.getMaxDistance());   
         }    
