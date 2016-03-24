@@ -30,8 +30,15 @@ public class ShoppingCart {
         if (itemCount >= capacity) {
             increaseSize();
         }
-        cart[itemCount] = new Item(itemName, price, quantity);
+        
+        if (quantity >0) {
+                   cart[itemCount] = new Item(itemName, price, quantity);
         itemCount++;
+        totalPrice += price * quantity; 
+        } else {
+            System.out.println("Quantity is invalid. Please pick up items again.");
+        }
+
     }
     // -----------------------------------------------------
     // Returns the contents of the cart together with
@@ -59,5 +66,17 @@ public class ShoppingCart {
             temp[i] = cart[i];
         }
         cart = temp;
+    }
+    
+    public int getItemCount(){
+        return itemCount;
+    }
+    
+    public boolean empty(){
+        return itemCount == 0;
+    }
+    
+    public double getTotalPrice(){
+        return totalPrice;
     }
 }
