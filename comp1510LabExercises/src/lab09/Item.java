@@ -27,7 +27,7 @@ public class Item {
     // ----------------------------------------------------- --
     public String toString() {
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
-        return (name + "\t" + fmt.format(price) + "\t" + quantity + "\t"
+        return (name + "\t" + fmt.format(price) + "\t\t" + quantity + "\t\t"
                 + fmt.format(price * quantity));
     }
 

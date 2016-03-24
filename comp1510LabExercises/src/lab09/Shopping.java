@@ -11,7 +11,7 @@ public class Shopping {
         String itemName;
         int itemQuantity;
         double itemPrice;
-        String choice="g";
+        String choice="s";
         
         System.out.println("Welcome for shopping");
         
@@ -24,14 +24,14 @@ public class Shopping {
             itemQuantity = scan.nextInt();
             
             shoppingCart.addToCart(itemName, itemPrice, itemQuantity);
-            if (!shoppingCart.empty()){
+            if (!shoppingCart.empty()) {
                     System.out.println(shoppingCart.toString());
             } else {
                 System.out.println("You don't get any item in your cart.");
             }
             
             System.out.println();
-            System.out.println("Next...go on shopping(g), checkout(c) or quit(q)?");
+            System.out.println("What to do next? Go on shopping(s), Checkout(c) or Quit(q)?");
             choice = scan.next();
             if (choice.equalsIgnoreCase("c")) {
                 System.out.println("Please pay " + fmt.format(shoppingCart.getTotalPrice()));
