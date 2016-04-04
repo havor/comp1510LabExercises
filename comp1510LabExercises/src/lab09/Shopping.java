@@ -41,6 +41,6 @@ public class Shopping {
             }
 
         } while(!choice.equalsIgnoreCase("q") && !choice.equalsIgnoreCase("c"));
-        System.out.println("Thank you for shopping. See you next time!");
+        System.out.println("\nThank you for shopping. See you next time!");
     }
 }
