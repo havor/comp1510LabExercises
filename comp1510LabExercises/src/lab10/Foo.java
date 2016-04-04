@@ -3,7 +3,7 @@ package lab10;
 public class Foo {
     public static void main(String[] args) {
         if (args.length == 0) {
-            
+            System.out.println("No argument offered!");
         } else {
             int x = 0;
             System.out.println("The numbers offered: ");
