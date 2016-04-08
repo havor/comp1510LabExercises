@@ -25,4 +25,10 @@ public class Player {
         System.out.print("Jersey number: ");
         jerseyNumber = scan.nextInt();
     }
+    
+    public boolean equals(Player otherPlayer){
+        return (name.equalsIgnoreCase(otherPlayer.name) 
+                && team.equalsIgnoreCase(otherPlayer.team) 
+                && jerseyNumber == otherPlayer.jerseyNumber);
+    }
 }
