@@ -20,9 +20,9 @@ public class ComparePlayers {
         // Compare player1 to player 2 and print a message saying
         // whether they are equal
         if (player1.equals(player2)) {
-            System.out.println("The two players are the same player.");
+            System.out.println("The two players are the same.");
         } else {
-            System.out.println("The two players are different players.");
+            System.out.println("The two players are different.");
         }
     }
 }
